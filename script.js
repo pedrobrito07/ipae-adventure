@@ -13,7 +13,7 @@ const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 // PIN do admin
-const ADMIN_PIN = "CoxinhadeChocolate";
+const ADMIN_PIN = "TentaAgoraViado";
 
 // Lista de times
 const times = ["Bird","Bravus","Fire","Ice","Sand","Speed","Stone","Storm","Taurus","Tiger"];
