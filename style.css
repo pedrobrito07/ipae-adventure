@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0c1c2c;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0 10px 0;
+}
+
+/* Botão admin */
+#adminToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #ffb703;
+  color: #0c1c2c;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 9999;
+}
+
+.tabela-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto 30px auto;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.tabela-container::before {
+  content: "";
+  background: url("LOGO IPAE ADVENTURE.png") no-repeat center;
+  background-size: 400px;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+  z-index: 1;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #444;
+}
+
+th {
+  background: #003366;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Esconde edição */
+.admin-only {
+  display: none;
+}
+
+/* Quando admin estiver ativo */
+body.admin .admin-only {
+  display: table-cell;
+}

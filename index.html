@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tabela IPAE Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🏆 Tabela IPAE Adventure</h1>
+
+  <!-- Botão de modo Admin -->
+  <button id="adminToggle">🔧 Modo admin</button>
+
+  <div class="tabela-container">
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>Posição</th>
+          <th>Time</th>
+          <th>Pontos</th>
+          <th class="admin-only">Atualizar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Bird</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>2</td><td>Bravus</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>3</td><td>Fire</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>4</td><td>Ice</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>5</td><td>Sand</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>6</td><td>Speed</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>7</td><td>Stone</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>8</td><td>Storm</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>9</td><td>Taurus</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+        <tr><td>10</td><td>Tiger</td><td>0</td><td class="admin-only"><input type="number"><button onclick="inserirPontos(this)">OK</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Firebase compat -->
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
